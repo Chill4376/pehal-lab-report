@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pehal Grewal Hospital – Lab Reports</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <img src="logo.png">
+  <h1>PEHAL GREWAL HOSPITAL</h1>
+  <p>Diagnostic Laboratory</p>
+</div>
+
+<div class="card">
+  <h2>Patient Details</h2>
+  <input id="name" placeholder="Patient Name">
+  <input id="age" placeholder="Age">
+  <select id="sex">
+    <option>Male</option>
+    <option>Female</option>
+  </select>
+</div>
+
+<div class="card">
+  <h2>Lipid Profile</h2>
+  <input id="tc" placeholder="Total Cholesterol (mg/dL)">
+  <input id="tg" placeholder="Triglycerides (mg/dL)">
+  <input id="hdl" placeholder="HDL (mg/dL)">
+  <button onclick="generatePDF()">Generate PDF</button>
+</div>
+
+<!-- jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- AutoTable (REQUIRED) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
+
+<!-- Your code -->
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
