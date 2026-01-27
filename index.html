@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pehal Grewal Hospital – Lab Reports</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <img src="logo.png">
+  <h1>PEHAL GREWAL HOSPITAL</h1>
+  <p>Diagnostic Laboratory</p>
+</div>
+
+<div class="card">
+  <h2>Patient Details</h2>
+  <input id="name" placeholder="Patient Name">
+  <input id="age" placeholder="Age">
+  <select id="sex">
+    <option>Male</option>
+    <option>Female</option>
+  </select>
+</div>
+
+<div class="card">
+  <h2>Sample & Report Details</h2>
+  <input id="sample_collection_time" placeholder="Sample Collection Time (e.g. 19/Jan/2026 04:24 PM)">
+  <input id="sample_received_time" placeholder="Sample Received in Lab Time">
+  <input id="reported_time" placeholder="Reported Time">
+  <input id="ref_doctor" placeholder="Ref. Doctor">
+  <input id="uaid" placeholder="UAID / Oth. Lab Ref.">
+  <input id="sin_no" placeholder="SIN No.">
+</div>
+
+<div class="card">
+  <h2>Lipid Profile</h2>
+  <input id="tc" placeholder="Total Cholesterol (mg/dL)">
+  <input id="tg" placeholder="Triglycerides (mg/dL)">
+  <input id="hdl" placeholder="HDL (mg/dL)">
+</div>
+
+<div class="card">
+  <h2>Whole Blood EDTA</h2>
+  <input id="hba1c" placeholder="HbA1c (%)">
+  <input id="emp_glucose" placeholder="Estimated Mean Plasma Glucose (mg/dL)">
+</div>
+
+<div class="card">
+  <h2>Uric Acid (Serum)</h2>
+  <input id="uric_acid" placeholder="Uric Acid (mg/dL)">
+</div>
+
+<div class="card">
+  <button onclick="generatePDF()">Generate PDF</button>
+</div>
+
+<!-- jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- AutoTable -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
+
+<!-- Your JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
